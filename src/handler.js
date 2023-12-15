@@ -134,7 +134,7 @@ const getBookByIdHandler = (request, h) => {
             status: 'fail',
             message: 'Buku tidak ditemukan',
         });
-        response.code(400);
+        response.code(404);
         return response;
     }
 };
